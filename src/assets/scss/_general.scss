@@ -1,3 +1,17 @@
+body {
+	font-family: Roboto,system,-apple-system,BlinkMacSystemFont,".SFNSDisplay-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #607179 !important;
+	font-size: .875rem;
+	font-weight: 400;
+	line-height: 1.8;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: #f2f7fa;
+	margin: 0;
+}
+
 button, html [type="button"], [type="reset"], [type="submit"] {
 	-webkit-appearance: button;
 }
