@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server $NODE_DEBUG_OPTION --config ./webpack.config.js",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
     "postinstall": "webpack -p --config ./webpack.config.js"
   },
   "dependencies": {
