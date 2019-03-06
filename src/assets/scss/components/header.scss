@@ -1,0 +1,202 @@
+.hl_call-bar {
+    background-color: #fff;
+    border-top: 3px solid rgba(242,247,250,0.3);
+    border-left: 2px solid #f2f7fa;
+    display: flex;
+    height: 60px;
+}
+
+.hl_call-bar .call-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px 20px;
+    width: 60px;
+    min-width: 60px;
+}
+
+.hl_call-bar .call-type .icon {
+    display: block;
+    font-size: 1rem;
+}
+
+.hl_call-bar .call-type p {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: .875rem;
+}
+
+.hl_call-bar.--in {
+    border-top: 3px solid rgba(55,202,55,0.5);
+}
+
+.hl_call-bar.--in .call-type {
+    color: #37ca37;
+}
+
+.hl_call-bar.--in .call-type .icon {
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.hl_call-bar .hl_call-bar--inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4.5px 10px 4.5px 20px;
+    border-left: 2px solid #f2f7fa;
+    border-right: 2px solid #f2f7fa;
+    flex: 1 0 0;
+}
+
+.hl_call-bar .hl_call-bar--inner .caller-id h4 {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.hl_call-bar .hl_call-bar--inner .caller-id p {
+    font-size: .75rem;
+}
+
+.hl_call-bar .hl_call-bar--inner .call-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.hl_call-bar .hl_call-bar--inner .call-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.hl_call-bar .hl_call-bar--inner .call-buttons .btn {
+    font-size: 1rem;
+    color: #607179;
+}
+
+.hl_call-bar .hl_call-bar--inner .call-buttons .btn.btn-arrows {
+    transform: rotate(45deg);
+}
+
+.hl_call-bar .hl_call-bar--inner .call-dial .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    color: #607179;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.hl_call-bar .hl_call-bar--inner .call-dial .dropdown-toggle:after {
+	display: none;
+}
+
+.hl_call-bar .hl_call-bar--inner .call-dial .dropdown-menu {
+    min-width: 250px;
+    max-width: 250px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.hl_call-bar .hl_call-bar--inner .call-dial .dropdown-menu .dial-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hl_call-bar .hl_call-bar--inner .call-dial .dropdown-menu .dial-numbers .dial-item {
+    display: block;
+    flex: 1 0 0;
+    min-width: 33.3333%;
+    width: 33.3333%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.hl_call-bar .hl_call-bar--inner .call-dial .dropdown-menu .dial-numbers .dial-item .number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    border: 1px solid #e0ecf3;
+    border-radius: 50%;
+    color: #2a3135;
+}
+
+.hl_call-bar .hl_call-bar--inner .call-dial .dropdown-menu .dial-numbers .dial-item .letters {
+    text-transform: uppercase;
+    font-size: .8125rem;
+    color: #afb8bc;
+}
+
+
+.hl_call-bar .call-actions {
+    padding: 4.5px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.hl_call-bar .call-actions>*:not(:last-child) {
+    margin-right: 15px;
+}
+
+.hl_call-bar .call-actions .call-time {
+    color: #2a3135;
+}
+
+.hl_call-bar .call-actions .btn-call .fa-phone {
+    transform: rotate(-135deg);
+}
+
+.hl_call-bar .call-actions .btn-next-lead {
+    font-size: .75rem;
+    height: 30px;
+    border-radius: 40px;
+}
+
+.hl_call-bar .call-actions .btn-next-lead .icon {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+@media (min-width: 768px) {
+	.hl_header {
+		background: #fff;
+		transition: all 0.4s cubic-bezier(0.72, 0.16, 0.345, 0.875) 0s;
+	}
+
+	.hl_header.nav-shrink {
+		box-shadow: inset 2px 0 0 0 #f2f7fa, 0 10px 10px 0 rgba(0,0,0,0.01);
+		position: fixed;
+		top: 0;
+		left: 70px;
+		right: 0;
+		z-index: 9;
+	}
+}
+
+@media (min-width: 1200px) {
+	.hl_header {
+		top: 0;
+		left: 250px;
+		right: 0;
+	}
+}
+
+@media (min-width: 1200px) {
+	.hl_header.nav-shrink {
+		left: 70px !important;
+	}
+}
